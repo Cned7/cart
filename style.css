@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+h1 {
+  color: blue;
+  font-size: 1.2rem;
+  margin-block: 2rem;
+  text-align: center;
+}
+
+.main--section {
+  margin-inline: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main--section {
+    margin-inline: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main--section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product--card {
+  background-color: white;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px rgb(173, 173, 220);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+
+.product--name--price {
+  text-align: center;
+}
+
+.product--name--price h2 {
+  font-size: 1rem;
+  margin-block: 0.5rem;
+}
+
+.product--name--price i {
+  color: blue;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+  margin-block: 1rem;
+}
+
+.product--card--btn--input {
+  display: flex;
+  gap: 1rem;
+  margin-block: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product--card--btn--input button {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete--heart--icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.plus--btn {
+  background-color: blue;
+}
+.minus--btn {
+  background-color: red;
+}
+.fa-heart {
+  color: blue;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.delete--btn {
+  background-color: red;
+}
+.minus--btn:hover,
+.delete--btn:hover {
+  background-color: brown;
+}
+.plus--btn:hover {
+  background-color: green;
+}
+
+.fa-heart:hover {
+  color: green;
+}
+.input--field {
+  width: 15%;
+  outline-color: rgb(156, 156, 216);
+  cursor: pointer;
+  padding-inline: 3px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.checkout--total--container {
+  display: flex;
+  gap: 5rem;
+  margin: 2rem;
+}
+
+.checkout--total--container h3 {
+  color: blue;
+  font-weight: bold;
+}
+
+.checkout--total--container button {
+  padding: 0.4rem 0.8rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.checkout--total--container button:hover {
+  background-color: green;
+}
